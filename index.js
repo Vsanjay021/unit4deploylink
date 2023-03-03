@@ -24,7 +24,7 @@ app.use("/cart",cartRouter)
 
 
 
-const port=process.env.port;
+const port=process.env.port || 3000;
 app.listen(port,async(req,res)=>{
     try {
         await connection;
